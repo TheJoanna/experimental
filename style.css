@@ -27,21 +27,8 @@
 
 /* temporary styles for sturctual html */
 
-header {
-    border: 1px solid blue;
-}
 
-section { 
-    border: 1px solid orange;
-}
 
-div { 
-    border: 1px solid red;
-}
-
-a {
-    border: 1px solid teal;
-}
 
 
  /*-------------------------- Universal styles & utility classes -------------------------*/
@@ -124,14 +111,16 @@ a {
 
 .bg-dark     { background-color:  ; }
 .bg-featured { background-color:  ; }
-.bg-light    { background-color: #fed7c8; }
+.bg-light-1    { background-color: #fee9e1; }
+.bg-light-2    { background-color: beige; }
+.bg-salmon    { background-color: #fed7c8; }
 
 
 /* Image Styles --------------------------------------*/
 
 .bg-image {
     background-color: #fee9e1;
-    /* background-image: url('https://source.unsplash.com/UIcBEy5TDTA'); */
+    background-image: url('/images/experimental-6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: bottom;
@@ -243,7 +232,7 @@ a:hover {
     display: inline-block;
     margin-right: 0.5rem;
     text-transform: uppercase;
-    /* border: none; */
+    border: none;
 }
 
 .logo h1 { 
