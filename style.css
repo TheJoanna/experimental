@@ -19,6 +19,11 @@
     box-sizing: border-box;
 }
 
+[class*=col-] {
+    padding: 0;
+    margin: 0;
+}
+
 /* temporary styles for sturctual html */
 
 /* section { */
@@ -93,6 +98,8 @@
 
 /* Minimum Height Classes ----------------------------*/
 
+
+
 .tall-50        { min-height: 50vh;   }
 .tall-60        { min-height: 60vh;   }
 .tall-70        { min-height: 70vh;   }
@@ -116,10 +123,10 @@
 
 .bg-image {
     background-color: #fed7c8;
-    background-image: url('https://source.unsplash.com/6T-4mtfQ4tM');
+    background-image: url('https://source.unsplash.com/UIcBEy5TDTA');
     background-size: cover;
     background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom;
     /* min-height: 10rem; */
 }
 
@@ -155,18 +162,20 @@ h2, h3, h4, h5, h6 {
     line-height: 1.1;
 }
 
+h1  { font-size: 3rem;   }
 h2  { font-size: 2.5rem; }
 h3  { font-size: 1.8rem; }
 h4  { font-size: 1.5rem; }
+h5  { font-size: 1.1rem; }
+h6  { font-size: 1rem; }
 
 p {
     font-weight: 200;
     line-height: 1.5;
     margin-bottom: 1rem;
-    font-family: var(--paragraph);
 }
 
-p:last-child {
+h1, h2, h3, h4, h5, h6, p:last-child {
     margin-bottom: 0;
 }
 
@@ -201,7 +210,9 @@ a:hover {
     color: var(--subtitle);
 }
 
-
+.border {
+    border-bottom: 0.75px solid;
+}
 /* Font Awesome Icons --------------------------*/
  
 .fa-solid {
@@ -354,7 +365,7 @@ a:hover {
  }
 
 
- /* General CSS Responsiveness Styles (Apply everywhere) */
+ General CSS Responsiveness Styles (Apply everywhere)
 
  .show-xs,
  .show-sm,
@@ -365,17 +376,17 @@ a:hover {
 
 /* ---------- MD Media Query (64em / 1024px) -----------*/
 
-@media(max-width:64em) {
+/* @media(max-width:64em) {
     .show-md { display: block; }
     .hide-md { display: none;  }
 
     .md-tall-80 { min-height: 80vh; }
 
-}
+} */
 
 /* ---------- SM Media Query (48em / 768px) -----------*/
 
-@media(max-width:48em) {
+/* @media(max-width:48em) {
     
     /* html     { font-size: 14px;     }
     p        {font-size: 1.1 rem;   } */
@@ -402,11 +413,11 @@ a:hover {
 
     header h3         { font-size: 11vw;    }
 
-}
+} */
 
 /* ---------- XS Media Query (36em / 576px) -----------*/
 
-@media(max-width:36em) {
+/* @media(max-width:36em) {
 
     .show-xs { display: block; }
     .hide-xs { display: none;  }
@@ -417,17 +428,17 @@ a:hover {
     }    
 
     h2       { font-size: 2rem; }
-}
+} */
 
 /* ---------- XXS Media Query (25em / 400px) -----------*/
 /* Due to the higher specificity of Gridlex (i.e. col-3_sm-6), need to add [class*="grid"] to make this class more specifc so that it overrides Gridlex at 25em */
 
-@media(max-width:25em) {
+/* @media(max-width:25em) {
 
     /* html { font-size: 12px; } */
 
-    [class*="grid"] .xxs-stack {
-        flex-basis: 100%;
-        max-width: 100%;
-    }   
-}
+    /* [class*="grid"] .xxs-stack { */
+        /* flex-basis: 100%; */
+        /* max-width: 100%; */
+    /* }    */
+/* }  */
