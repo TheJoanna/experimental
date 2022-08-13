@@ -1,15 +1,13 @@
 /* 
     Colors
-    Nyanza: #E5FFDE
-    Antique Fuchsia: #9D6381
+    Beige:      beige  
+    pink:     #fee9e1
+    Dark Gray:  #262626
     Deep Green: #093A3E
-    Xiketic: #18020C
 
     
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-family: 'Archivo', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Inconsolata', monospace;
 */
 
 /* CSS reset */
@@ -29,10 +27,21 @@
 
 /* temporary styles for sturctual html */
 
-section { */
-    border: 1px solid rgb(240,240,240);
+header {
+    border: 1px solid blue;
 }
 
+section { 
+    border: 1px solid orange;
+}
+
+div { 
+    border: 1px solid red;
+}
+
+a {
+    border: 1px solid teal;
+}
 
 
  /*-------------------------- Universal styles & utility classes -------------------------*/
@@ -121,8 +130,8 @@ section { */
 /* Image Styles --------------------------------------*/
 
 .bg-image {
-    background-color: #fed7c8;
-    background-image: url('https://source.unsplash.com/UIcBEy5TDTA');
+    background-color: #fee9e1;
+    /* background-image: url('https://source.unsplash.com/UIcBEy5TDTA'); */
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: bottom;
@@ -147,7 +156,7 @@ section { */
 /* Typography Styles --------------------------------*/
 
 body { 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Archivo', sans-serif;
     color: #262626;
 }
 
@@ -192,10 +201,7 @@ a:hover {
 .font-weight-light          { font-weight: 200;    }
 .font-weight-extra-bold     { font-weight: 800;    }
 
-.font-1  { font-family: 'Alumni Sans Pinstripe', sans-serif; }
-.font-2  { font-family: 'Archivo', sans-serif;               }
-.font-3  { font-family: 'Josefin Sans', sans-serif;          }
-.font-4  { font-family: 'Raleway', sans-serif;                }
+.featured-font  { font-family: 'Inconsolata', monospace; }
 
 .featured-text  { color: var(--featured);    }
 .white-text     { color: white;      }
@@ -206,20 +212,20 @@ a:hover {
 
 .subtitle { 
     font-size: 1.2rem;    
-    color: var(--subtitle);
+    color: darkgrey;
 }
 
 .border {
-    border-bottom: 0.75px solid;
+    border-bottom: 0.5px solid;
 }
 /* Font Awesome Icons --------------------------*/
  
-.fa-solid {
+/* .fa-solid {
     display: block;
     text-align: center;
     margin-bottom: 2rem;
     font-size: 3rem;
- }
+ } */
 
 
  /* Header & Footer Styles --------------------*/
@@ -229,26 +235,20 @@ a:hover {
     /* background-image: url('https://source.unsplash.com/random?=sig1'); */
     /* background-size: cover; */
     /* background-position: center; */
-    padding: 2% 5%;
+    /* padding: 2% 5%; */
 
- }
-
- header h3 {
-    font-size: 5.5rem;
-    line-height: 1;
  }
 
  nav a {
     display: inline-block;
-    padding: 0.5rem;
     margin-right: 0.5rem;
     text-transform: uppercase;
-    border: none;
+    /* border: none; */
 }
 
-.logo h2 { 
+.logo h1 { 
     margin-bottom: 0;
-    font-size: 3rem;
+    font-size: 10rem;
     letter-spacing: 0.5rem;
 }
 
@@ -258,29 +258,6 @@ a:hover {
 
  /* Mobile Menu Styles-------------------------- */
 
- .mobile-menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
- }
-
- .mobile-menu a {
-    display: block;
-    font-size: 1.5rem;
-    padding: 0.5rem;
- }
-
- .hamburger-button {
-    position: relative;
-    z-index: 2;
- }
-
- .hamburger-button i {
-    font-size: 2.2rem;
-    margin-bottom: 0;
- }
 
 
 /* Background Images ----------------------------*/
@@ -406,13 +383,6 @@ a:hover {
     .sm-padded-l-0    { padding-left: 0;    }
     .sm-padded-r-0    { padding-right: 0;   }
 
-    .logo h2          { 
-        font-size: 2rem;    
-    }
-
-    header h3         { font-size: 11vw;    }
-
-} */
 
 /* ---------- XS Media Query (36em / 576px) -----------*/
 
