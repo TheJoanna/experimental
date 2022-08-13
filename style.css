@@ -19,8 +19,11 @@
     box-sizing: border-box;
 }
 
-[class*=col-] {
+[class*=col] {
     padding: 0;
+}
+
+[class*=grid] {
     margin: 0;
 }
 
