@@ -26,7 +26,12 @@
 }
 
 /* temporary styles for sturctual html */
-
+hr {
+    border: none;
+    border-top: 0.5px dotted;
+    width: 75%;
+    margin: auto;
+}
 
 
 
@@ -94,6 +99,8 @@
 .margin-tb  { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr  { margin-left: 5%; margin-right: 5%; }
 
+.margin-auto { margin: auto; }
+
 
 /* Minimum Height Classes ----------------------------*/
 
@@ -109,11 +116,11 @@
 
 /* Backgrounds & Images -------------------------------*/
 
-.bg-dark     { background-color:  ; }
-.bg-featured { background-color:  ; }
+.bg-dark-1     { background-color: #093A3E; }
+.bg-dark-2     { background-color: #262626; }
+.bg-featured   { background-color:  #fed7c8; }
 .bg-light-1    { background-color: #fee9e1; }
 .bg-light-2    { background-color: beige; }
-.bg-salmon    { background-color: #fed7c8; }
 
 
 /* Image Styles --------------------------------------*/
@@ -130,6 +137,7 @@
 /* Aspect Ratio */
 .portrait-tall { padding-bottom: 175%; }
 .portrait { padding-bottom: 136%; }
+.portrait-short { padding-bottom: 111%; }
 .square { padding-bottom: 100%; }
 .landscape { padding-bottom: 66%; }
 .landscape-wide { padding-bottom: 56%; }
@@ -182,8 +190,8 @@ a {
     border-bottom: 1px solid;
 }
 
-a:hover {
-    color: var(--featured);
+footer a:hover {
+    color: #fec5af;
 }
 
 .font-weight-normal         { font-weight: normal; }
@@ -192,29 +200,44 @@ a:hover {
 
 .featured-font  { font-family: 'Inconsolata', monospace; }
 
-.featured-text  { color: var(--featured);    }
+.featured-text  { color: #fed7c8;    }
 .white-text     { color: white;      }
+.light-text-1   { color: beige;      }
+.light-text-2   { color: #fee9e1;      }
 
 .small-text     { font-size: 1.5rem;   }
 .medium-text    { font-size: 2rem;     }
 .big-text       { font-size: 4.5rem;   }
+
+.uppercase      { text-transform: uppercase; }
+.capitalize     { text-transform: capitalize; }
+.lowercase      { text-transform: lowercase; }
 
 .subtitle { 
     font-size: 1.2rem;    
     color: darkgrey;
 }
 
-.border {
-    border-bottom: 0.5px solid;
-}
+.border-b   { border-bottom: 0.5px solid #fed7c8; }
+.border-t   { border-top: 0.5px solid #fed7c8;    }
+
 /* Font Awesome Icons --------------------------*/
  
-/* .fa-solid {
+.fa-solid {
     display: block;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 3rem;
- } */
+    font-size: 4rem;
+ }
+
+.fa-brands {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    display: inline-block;
+    padding: 5%;
+    margin-left: 2%;
+ }
 
 
  /* Header & Footer Styles --------------------*/
@@ -241,9 +264,12 @@ a:hover {
     letter-spacing: 0.5rem;
 }
 
- footer a {
+ footer h5 {
     border: none;
+    display: block;
+    line-height: 3;
  }
+
 
  /* Mobile Menu Styles-------------------------- */
 
@@ -251,24 +277,23 @@ a:hover {
 
 /* Background Images ----------------------------*/
 
- .bg-bedroom {
-    background-image: url('/images/the-sleep-co-3.jpg');
+ .bg-table {
+    background-image: url('/images/experimental-1.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
  }
 
- .bg-pug {
-    background-image: url('/images/the-sleep-co-1.jpg');
-    background-size: cover;
-    background-position: 50% 35%;
+ .bg-man {
+    background-image: url('https://source.unsplash.com/9ewfCZmObeM');
+    border-radius: 0rem 20rem;
  }
 
- .bg-pillow {
-    background-image: url('/images/the-sleep-co-2.jpg');
+ .bg-woman {
+    background-image: url('/images/experimental-2.jpg');
     background-size: cover;
-    background-position: 50% 57%;
+    background-position: 65% 35%;
+    border-radius: 20rem 0;
  }
-
 
  /*  Image Gallery ------------------------------ */
 
@@ -312,11 +337,19 @@ a:hover {
  }
 
  .button {
-    padding: 0.5rem 2rem;
-    background-color: var(--featured);
+    padding: 1rem;
+    font-family: 
     appearance: none;
-    border: 2px solid var(--featured);
+    display: inline-block;
+    border: 1px solid beige;
     color: inherit;
+    border-radius: 1rem 0;
+ }
+
+ .button:hover{
+    background-color: #fed7c8;
+    border: 1px solid #fed7c8;
+    color: #262626
  }
 
 
