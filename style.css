@@ -29,9 +29,9 @@
 
 /* temporary styles for sturctual html */
 
-/* section { */
-    /* border: 1px solid rgb(240,240,240); */
-/* } */
+section { */
+    border: 1px solid rgb(240,240,240);
+}
 
 
 
@@ -101,8 +101,8 @@
 
 /* Minimum Height Classes ----------------------------*/
 
-
-
+.tall-30        { min-height: 30vh;   }
+.tall-40        { min-height: 40vh;   }
 .tall-50        { min-height: 50vh;   }
 .tall-60        { min-height: 60vh;   }
 .tall-70        { min-height: 70vh;   }
@@ -113,13 +113,9 @@
 
 /* Backgrounds & Images -------------------------------*/
 
-.bg-dark { 
-    background-color: var(--dark); 
-    color: var(--white);
-}
-
-.bg-featured { background-color: var(--featured); }
-.bg-light    { background-color: var(--light); }
+.bg-dark     { background-color:  ; }
+.bg-featured { background-color:  ; }
+.bg-light    { background-color: #fed7c8; }
 
 
 /* Image Styles --------------------------------------*/
@@ -152,7 +148,7 @@
 
 body { 
     font-family: 'Raleway', sans-serif;
-    color: #18020C;
+    color: #262626;
 }
 
 .left        { text-align: left;    }
