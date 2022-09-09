@@ -42,6 +42,7 @@ hr {
 .padded     { padding: 5%;   }
 .padded-sm  { padding: 1rem; }
 .padded-lg  { padding: 10%;  }
+.padded-xl  { padding: 20%;  }
 
 .padded-sm  { padding: 2.5%; }
 .padded-md  { padding: 5%;   }
@@ -284,15 +285,15 @@ footer a:hover {
  }
 
  .bg-man {
-    background-image: url('https://source.unsplash.com/9ewfCZmObeM');
-    border-radius: 0rem 20rem;
+    background-image: url('/images/experimental-7.jpg');
+    border-radius: 50rem;
  }
 
  .bg-woman {
     background-image: url('/images/experimental-2.jpg');
     background-size: cover;
-    background-position: 65% 35%;
-    border-radius: 20rem 0;
+    /* background-position: 65% 35%; */
+    border-radius: 50rem;
  }
 
  /*  Image Gallery ------------------------------ */
