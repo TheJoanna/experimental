@@ -271,6 +271,11 @@ footer a:hover {
     line-height: 3;
  }
 
+.copyright {
+    font-family: 'Archivo', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
 
  /* Mobile Menu Styles-------------------------- */
 
